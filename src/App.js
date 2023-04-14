@@ -4,11 +4,18 @@ import i18n from 'i18next';
 import Home from './Components/Home/Home';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-
+import './Themes/color-dark.css'; // "dark-theme" by Default
+import React, { useState } from 'react';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-  // function cambiarIdioma(lang) {
+  function handleModeChange() {
+    setIsDarkMode(!isDarkMode);
+    const variablesFile = isDarkMode ? './Themes/color-dark.css' : './Themes/color-light.css';
+    import(variablesFile);
+  }
+  // function changeLang(lang) {
   //   i18n.changeLanguage(lang); // cambia el idioma actual a 'lang'
   //   document.documentElement.lang = lang; // actualiza la etiqueta 'lang' en el HTML
   // }
@@ -24,9 +31,6 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Routes>
-          <Route exact path={"/"} element={<Home />} />
-      </Routes> */}
       <Home />
       <Footer />
     </>

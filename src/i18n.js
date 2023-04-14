@@ -7,18 +7,42 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      "myCard_hi": "Hi!",
+      "myCard_iam": "I'm Constantin Mitrokhin",
+      "myCard_dev": "Full-Stack Developer",
+      "myCard_imgAlt": "Profile Picture",
+      "flag": '../Images/flag_brit_usa.jpg',
+      "flag_alt": "Britsh American Flag",
+
       "Welcome to React": "Welcome to React and react-i18next",
       "footer_hi": "Hello from Footer",
       "header_hi": "Hello from Header",
       "home_hi": "Hello from Home",
+      "navBar_home": "Home",
+      "navBar_about": "About",
+      "navBar_portfolio": "Portfolio",
+      "navBar_contact": "Contact",
+      "navBar_flag": "Flag",
+      "navBar_lang": "English",
     }
   },
   es: {
     translation: {
+      "myCard_hi": "Hola!",
+      "myCard_iam": "Soy Constantin Mitrokhin",
+      "myCard_dev": "Desarrollador Full-Stack",
+      "myCard_imgAlt": "Foto de Perfil",
+
       "Welcome to React": "Bienvenido a React y react-i18next",
       "footer_hi": "Hola Desde Footer",
       "header_hi": "Hola Desde Header",
       "home_hi": "Hola Desde Home",
+      "navBar_home": "Inicio",
+      "navBar_about": "Acerca",
+      "navBar_portfolio": "Portafolio",
+      "navBar_contact": "Contacte",
+      "navBar_flag": "Band",
+      "navBar_lang": "Español",
     }
   }
 };

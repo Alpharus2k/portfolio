@@ -1,1 +1,86 @@
+.header {
+    margin-top: 0;
+    height: 100vh;
+    background-image: var(--bg-img-url);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
 
+.myCard {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.myImgContainer img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-height: 42vh;
+    max-width: auto;
+}
+.textContainer {
+    background-color: var(--text-bg-color);
+    padding: 0.8rem;
+    text-shadow: var(--text-shadow);
+    border-radius: 1rem;
+}
+.hi {
+    color: var(--regular-color);
+    font-weight: 550;
+    font-size: 2.5rem;
+}
+.name {
+    color: var(--highlighted-color);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.desc {
+    color: var(--regular-color);
+    font-weight: 550;
+    font-size: 2.5rem;
+}
+@media only screen and (max-width: 850px) {
+    .myCard {
+      flex-direction: column;
+    }
+    .textContainer {
+        padding: 0.4rem;
+    }
+    .hi {
+        font-weight: 550;
+        font-size: 1.5rem;
+    }
+    .name {
+        font-size: 1.9rem;
+    }
+    .desc {
+        font-size: 1.5rem;
+    }
+  }
+@media only screen and (max-width: 700px) {
+    .myCard {
+      flex-direction: column;
+    }
+    .textContainer {
+        padding: 0.3rem;
+
+    }
+    .hi {
+        font-weight: 550;
+        font-size: 1.2rem;
+    }
+    .name {
+        font-size: 1.6rem;
+    }
+    .desc {
+        font-size: 1.2rem;
+    }
+  }

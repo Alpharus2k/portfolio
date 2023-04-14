@@ -1,0 +1,7 @@
+:root {
+    --highlighted-color: #0d6efd;
+    --regular-color: #333333;
+    --regular-hover-color: #222222;
+    --dark-color: #333333;
+    --bg-img-url: url('../Components/Header/header_bg_image_light.png');
+}
