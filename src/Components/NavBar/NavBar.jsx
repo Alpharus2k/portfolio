@@ -9,6 +9,11 @@ export default function NavBar() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+
+  const handleLangChange = (event) => {
+    i18n.changeLanguage(event.target.value);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,6 +29,10 @@ export default function NavBar() {
     setIsOpen(!isOpen);
   };
 
+  const toggleLangMenu = () => {
+    setIsLangMenuOpen(!isLangMenuOpen);
+  }
+
   return (
     <div className={styles.navbar}>
       {isMobile && (
@@ -37,7 +46,11 @@ export default function NavBar() {
           <span className={styles.spanElem}>{t("navBar_about")}</span>
           <span className={styles.spanElem}>{t("navBar_portfolio")}</span>
           <span className={styles.spanElem}>{t("navBar_contact")}</span>
-          <span className={styles.spanElem}>{t("navBar_lang")}</span>
+          <select className={styles.langSelect} value={i18n.language} onChange={handleLangChange}>
+            <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="en">{t("lang_en")}</option>
+            <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="es">{t("lang_es")}</option>
+            <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="ru">{t("lang_ru")}</option>
+          </select>
         </div>
       )}
       {isMobile && isOpen && (
@@ -47,7 +60,11 @@ export default function NavBar() {
             <span className={styles.spanElemOverlay}>{t("navBar_about")}</span>
             <span className={styles.spanElemOverlay}>{t("navBar_portfolio")}</span>
             <span className={styles.spanElemOverlay}>{t("navBar_contact")}</span>
-            <span className={styles.spanElemOverlay}>{t("navBar_lang")}</span>
+            <select value={i18n.language} onChange={handleLangChange}>
+              <option className={styles.spanElem} value="en">{t("lang_en")}</option>
+              <option className={styles.spanElem} value="es">{t("lang_es")}</option>
+              <option className={styles.spanElem} value="ru">{t("lang_ru")}</option>
+            </select>
           </div>
         </div>
       )}

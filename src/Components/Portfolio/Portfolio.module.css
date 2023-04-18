@@ -1,0 +1,27 @@
+.portfolioContainer {
+    padding: 20px 10vw;
+}
+.videosContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.video {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+.videosContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.video {
+    flex: 0 0 100%;
+    margin-right: 20px;
+}
+.video:last-child {
+    margin-right: 0;
+}
+}

@@ -6,7 +6,9 @@
     --bg-img-url: url('../Images/header_bg_image_dark2.jpg');
     --text-bg-color:  rgba(255, 255, 255, 0.6);
     --text-shadow: 1px 1px 1px rgba(95, 229, 249, 0.65);
+    --btn-color: rgb(65, 105, 225);
+    --btn-color-hover: rgba(95, 229, 249, 0.65);
     --navbar-color: rgb(255, 255, 255);
     --navbar-hover-color: rgb(212, 210, 210);
-    
+
 }

@@ -29,3 +29,9 @@ code {
   font-family: 'Roboto', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+select option:checked {
+  background-color: transparent;
+}
+option {
+  padding: 10px;
+}

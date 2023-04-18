@@ -17,7 +17,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "nodemon -L",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +41,6 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+   
   }
 }

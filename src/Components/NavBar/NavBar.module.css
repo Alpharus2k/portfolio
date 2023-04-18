@@ -5,12 +5,12 @@
     background-color: transparent;
     padding-left: 8px;
     flex-direction: row;
-    margin-right: 10vh;
+    margin-right: 5vw;
     margin-top: 10px;
 }
 
 .btnBurger {
-    padding: 4vh;
+    padding: 4vw;
     border-radius: 1rem;
     background-color: var(--text-bg-color);
 }
@@ -59,4 +59,20 @@
 
 .overlayContent span {
     margin-bottom: 10px;
+}
+
+.langSelect {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1.2px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--navbar-color);
 }

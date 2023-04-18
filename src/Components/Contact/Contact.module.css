@@ -1,0 +1,28 @@
+.contactContainer {
+    padding: 20px 10vw;
+}
+.linksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+}
+.contItemImg {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.contItemText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-weight: 800;
+}
