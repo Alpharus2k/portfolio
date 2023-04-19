@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1ec8e055.css",
+    "main.js": "/portfolio/static/js/main.9f435596.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/header_bg_image_dark2.jpg": "/portfolio/static/media/header_bg_image_dark2.e4d91794d5ac66155da9.jpg",
+    "static/media/Roboto-Regular.ttf": "/portfolio/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Bold.ttf": "/portfolio/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/profile.png": "/portfolio/static/media/profile.2becce16175d6fa5b156.png",
+    "static/media/flag_brit_usa.jpg": "/portfolio/static/media/flag_brit_usa.1b60ae0f6e2786d63eaa.jpg",
+    "static/media/skill_sequelize.png": "/portfolio/static/media/skill_sequelize.ee9b2cd1c2176ea4fe4f.png",
+    "static/media/skill_react.png": "/portfolio/static/media/skill_react.598c274386446bb54ac6.png",
+    "static/media/skill_express.png": "/portfolio/static/media/skill_express.977a401151134550a3fc.png",
+    "static/media/skill_opp.png": "/portfolio/static/media/skill_opp.c21267039e141131142a.png",
+    "static/media/skill_css.png": "/portfolio/static/media/skill_css.5491a3b05b4addb59c15.png",
+    "static/media/linkEmail.png": "/portfolio/static/media/linkEmail.0ff8c06a6baf11146cb1.png",
+    "static/media/skill_html5.png": "/portfolio/static/media/skill_html5.397540dec969b31fd37c.png",
+    "static/media/skill_redux.png": "/portfolio/static/media/skill_redux.4bebbe1e5361c338b767.png",
+    "index.html": "/portfolio/index.html",
+    "main.1ec8e055.css.map": "/portfolio/static/css/main.1ec8e055.css.map",
+    "main.9f435596.js.map": "/portfolio/static/js/main.9f435596.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ec8e055.css",
+    "static/js/main.9f435596.js"
+  ]
+}
