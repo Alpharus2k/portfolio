@@ -33,6 +33,7 @@ const resources = {
       "contact_mail": "Mail Me",
       "contact_follow": "Follow Me",
       "contact_msg": "Contact Me",
+      "link_pdf": "resume_en.pdf",
     }
   },
   ru: {
@@ -59,10 +60,11 @@ const resources = {
       "lang_es": "Испанский",
       "lang_en": "Английский",
       "lang_ru": "Русский",
-      "contact": "Контакты",
+      "contact": "Контакт",
       "contact_mail": "Написать письмо",
       "contact_follow": "Подписаться",
       "contact_msg": "Связаться со мной",
+      "link_pdf": "resume_ru.pdf",
     }
   },
   es: {
@@ -93,6 +95,7 @@ const resources = {
       "contact_mail": "Contáctame",
       "contact_follow": "Sígueme",
       "contact_msg": "Contáctame",
+      "link_pdf": "resume_es.pdf",
     }
   }
   // "Who am I?": "Кто я?"

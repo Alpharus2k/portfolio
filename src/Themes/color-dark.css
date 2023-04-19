@@ -1,6 +1,8 @@
 :root {
     --highlighted-color:  #000000;
     --regular-color: #3a3a3a;
+    --regular-color-active: #b0b0b0;
+    --navBar-bg-color: rgba(0, 0, 0, 0.6);
     --regular-hover-color: #ffffff;
     --dark-color: #333333;
     --bg-img-url: url('../Images/header_bg_image_dark2.jpg');

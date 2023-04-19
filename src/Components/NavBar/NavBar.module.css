@@ -1,14 +1,19 @@
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    background-color: transparent;
-    padding-left: 8px;
-    flex-direction: row;
-    margin-right: 5vw;
-    margin-top: 10px;
+    background-color: var(--navBar-bg-color);
+    width: 100%;
+    padding: 8px 60px  8px 8px;
+    text-align: right;
+  }
+
+.fixedNavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
+.active {
+   color: var(--regular-color-active);
+}
 .btnBurger {
     padding: 4vw;
     border-radius: 1rem;
@@ -76,3 +81,5 @@
     font-size: 1.1rem;
     color: var(--navbar-color);
 }
+
+

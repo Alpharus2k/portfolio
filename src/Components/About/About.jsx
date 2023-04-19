@@ -12,18 +12,23 @@ import imgExpress from "../../Images/skill_express.png";
 import imgGit from "../../Images/skill_git.png";
 import imgOop from "../../Images/skill_opp.png";
 
-export default function About() {
+export default function About({id}) {
   const { t, i18n } = useTranslation();
 
+  const handleDownload = () => {
+    const pdfUrl = t("link_pdf");
+    window.open(pdfUrl, "_blank");
+  };
+
   return (
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer} id={id}>
       <h1>{t("about_title")}</h1>
       <div className={styles.contentContainer}>
         <div className={styles.halfContainer}>
           <h2 className={styles.paddingBottom}>{t("about_title_who")}</h2>
           <h2 className={styles.paddingBottom}>{t("about_title_iam1")}</h2>
           <p className={styles.paddingBottom}>{t("about_title_iam2")}</p>
-          <button className={styles.btnCV}>{t("about_download_cv_txt")}</button>
+          <button className={styles.btnCV} onClick={handleDownload}>{t("about_download_cv_txt")}</button>
         </div>
         <div className={styles.halfContainer}>
           <h2 className={styles.paddingBottom}>{t("about_title_skills")}</h2>

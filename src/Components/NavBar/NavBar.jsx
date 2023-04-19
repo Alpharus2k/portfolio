@@ -10,6 +10,8 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const handleLangChange = (event) => {
     i18n.changeLanguage(event.target.value);
@@ -29,12 +31,35 @@ export default function NavBar() {
     setIsOpen(!isOpen);
   };
 
-  const toggleLangMenu = () => {
-    setIsLangMenuOpen(!isLangMenuOpen);
-  }
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    const sections = document.querySelectorAll("div[id]");
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (
+        currentScrollY >= sectionTop &&
+        currentScrollY < sectionTop + sectionHeight
+      ) {
+        setActiveSection(section.id);
+      }
+    });
+    if (currentScrollY > 0) {
+      setIsNavbarFixed(true);
+    } else {
+      setIsNavbarFixed(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${isNavbarFixed ? styles.fixedNavbar : ""}`}>
       {isMobile && (
         <button className={styles.btnBurger} onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} size="4x" style={{ fontWeight: "bold" }}/>
@@ -42,10 +67,11 @@ export default function NavBar() {
       )}
       {!isMobile && (
         <div>
-          <span className={styles.spanElem}>{t("navBar_home")}</span>
-          <span className={styles.spanElem}>{t("navBar_about")}</span>
-          <span className={styles.spanElem}>{t("navBar_portfolio")}</span>
-          <span className={styles.spanElem}>{t("navBar_contact")}</span>
+
+          <span className={styles.spanElem}><a className={activeSection === "home" ? styles.active : "" } href="#home">{t("navBar_home")}</a></span>
+          <span className={styles.spanElem}><a className={activeSection === "about" ? styles.active : "" } href="#about">{t("navBar_about")}</a></span>
+          <span className={styles.spanElem}><a className={activeSection === "portfolio" ? styles.active : "" } href="#portfolio">{t("navBar_portfolio")}</a></span>
+          <span className={styles.spanElem}><a className={activeSection === "contact" ? styles.active : "" } href="#contact">{t("navBar_contact")}</a></span>
           <select className={styles.langSelect} value={i18n.language} onChange={handleLangChange}>
             <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="en">{t("lang_en")}</option>
             <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="es">{t("lang_es")}</option>
@@ -60,10 +86,10 @@ export default function NavBar() {
             <span className={styles.spanElemOverlay}>{t("navBar_about")}</span>
             <span className={styles.spanElemOverlay}>{t("navBar_portfolio")}</span>
             <span className={styles.spanElemOverlay}>{t("navBar_contact")}</span>
-            <select value={i18n.language} onChange={handleLangChange}>
-              <option className={styles.spanElem} value="en">{t("lang_en")}</option>
-              <option className={styles.spanElem} value="es">{t("lang_es")}</option>
-              <option className={styles.spanElem} value="ru">{t("lang_ru")}</option>
+            <select  value={i18n.language} onChange={handleLangChange}>
+              <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="en">{t("lang_en")}</option>
+              <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="es">{t("lang_es")}</option>
+              <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="ru">{t("lang_ru")}</option>
             </select>
           </div>
         </div>

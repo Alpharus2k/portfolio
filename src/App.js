@@ -17,25 +17,14 @@ function App() {
   //   const variablesFile = isDarkMode ? './Themes/color-dark.css' : './Themes/color-light.css';
   //   import(variablesFile);
   // }
-  // function changeLang(lang) {
-  //   i18n.changeLanguage(lang); // cambia el idioma actual a 'lang'
-  //   document.documentElement.lang = lang; // actualiza la etiqueta 'lang' en el HTML
-  // }
-  // render() {
-  //   return (
-  //     <div>
-  //       {/* aquí va el resto del contenido del componente */}
-  //     </div>
-  //   );
-  //   document.documentElement.lang = i18n.language;
-  // }
+
 
   return (
     <>
-      <Header />
-      <About />
-      <Portfolio />
-      <Contact />
+      <Header id="home"/>
+      <About  id="about"/>
+      <Portfolio id="portfolio" />
+      <Contact id="contact" />
     </>
 
   );

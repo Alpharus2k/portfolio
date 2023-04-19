@@ -32,6 +32,7 @@ code {
 select option:checked {
   background-color: transparent;
 }
-option {
-  padding: 10px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
