@@ -86,7 +86,7 @@ export default function NavBar() {
             <span className={styles.spanElemOverlay}>{t("navBar_about")}</span>
             <span className={styles.spanElemOverlay}>{t("navBar_portfolio")}</span>
             <span className={styles.spanElemOverlay}>{t("navBar_contact")}</span>
-            <select  value={i18n.language} onChange={handleLangChange}>
+            <select value={i18n.language} onChange={handleLangChange} onClick={(e) => e.stopPropagation()}>
               <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="en">{t("lang_en")}</option>
               <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="es">{t("lang_es")}</option>
               <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="ru">{t("lang_ru")}</option>
