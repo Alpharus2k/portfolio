@@ -24,7 +24,6 @@ const resources = {
       "about_title_iam1": "I'm Constantin Mitrokhin, Full-Stack Developer",
       "about_title_iam2": "My name is Constantin Mitrokhin, and I am a Full-Stack Developer passionate about problem-solving with excellent interpersonal skills. I enjoy collaborating and working in teams to achieve shared objectives. My communication abilities are clear and effective, and I am always eager to share my ideas and insights with others. If you would like to learn more about my strengths and accomplishments, I would be happy to share some of my key projects with you.",
       "about_download_cv_txt": "Download CV",
-      "about_downdload_ext_link": "_en",
       "portfolio_title": "Portfolio",
       "lang_es": "Spanish",
       "lang_en": "English",
@@ -45,7 +44,7 @@ const resources = {
       "navBar_flag": "Флаг",
       "navBar_lang": "Русский",
       "myCard_hi": "Привет!",
-      "myCard_iam": "Меня зовут Константин Митрохин",
+      "myCard_iam": "Константин Митрохин",
       "myCard_dev": "Full-Stack разработчик",
       "myCard_imgAlt": "Фото профиля",
       "flag_alt": "Британский американский флаг",
@@ -55,7 +54,6 @@ const resources = {
       "about_title_iam1": "Я - Константин Митрохин, Full-Stack разработчик",
       "about_title_iam2": "Меня зовут Константин Митрохин, и я Full-Stack разработчик, увлеченный решением проблем и обладающий отличными межличностными навыками. Я люблю сотрудничать и работать в команде, чтобы достигать общих целей. Мои навыки коммуникации ясны и эффективны, и я всегда готов поделиться своими идеями и знаниями с другими. Если вы хотите узнать больше о моих сильных сторонах и достижениях, я буду рад поделиться некоторыми из моих ключевых проектов с вами.",
       "about_download_cv_txt": "Скачать резюме",
-      "about_downdload_ext_link": "_en",
       "portfolio_title": "Портфолио",
       "lang_es": "Испанский",
       "lang_en": "Английский",
@@ -86,7 +84,6 @@ const resources = {
       "about_title_iam1": "Soy Constantin Mitrokhin, Desarrollador Full-Stack",
       "about_title_iam2": "Mi nombre es Constantin Mitrokhin y soy un desarrollador Full-Stack apasionado por la resolución de problemas con excelentes habilidades interpersonales. Disfruto colaborar y trabajar en equipo para lograr objetivos compartidos. Mis habilidades de comunicación son claras y efectivas, y siempre estoy dispuesto a compartir mis ideas y conocimientos con los demás. Si desea conocer más sobre mis fortalezas y logros, estaré encantado de compartir algunos de mis proyectos clave con usted",
       "about_download_cv_txt": "Descargar CV",
-      "about_downdload_ext_link": "_es",
       "portfolio_title": "Portafolio",
       "lang_es": "Español",
       "lang_en": "Inglés",
@@ -98,9 +95,6 @@ const resources = {
       "link_pdf": "resume_es.pdf",
     }
   }
-  // "Who am I?": "Кто я?"
-  // "About": "Обо мне" 
-  // ""
 };
 
 i18n
