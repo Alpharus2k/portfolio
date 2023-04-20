@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1ec8e055.css",
-    "main.js": "/portfolio/static/js/main.9f435596.js",
+    "main.js": "/portfolio/static/js/main.b05cee17.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/header_bg_image_dark2.jpg": "/portfolio/static/media/header_bg_image_dark2.e4d91794d5ac66155da9.jpg",
+    "static/media/Constantin Mitrokhin - FullStack Developer_es.pdf": "/portfolio/static/media/Constantin Mitrokhin - FullStack Developer_es.55943bf280da97c8fec7.pdf",
+    "static/media/Constantin Mitrokhin - FullStack Developer_en.pdf": "/portfolio/static/media/Constantin Mitrokhin - FullStack Developer_en.1df98c2811adf209b450.pdf",
     "static/media/Roboto-Regular.ttf": "/portfolio/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Roboto-Bold.ttf": "/portfolio/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
     "static/media/profile.png": "/portfolio/static/media/profile.2becce16175d6fa5b156.png",
@@ -18,11 +20,11 @@
     "static/media/skill_redux.png": "/portfolio/static/media/skill_redux.4bebbe1e5361c338b767.png",
     "index.html": "/portfolio/index.html",
     "main.1ec8e055.css.map": "/portfolio/static/css/main.1ec8e055.css.map",
-    "main.9f435596.js.map": "/portfolio/static/js/main.9f435596.js.map",
+    "main.b05cee17.js.map": "/portfolio/static/js/main.b05cee17.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ec8e055.css",
-    "static/js/main.9f435596.js"
+    "static/js/main.b05cee17.js"
   ]
 }
