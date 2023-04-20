@@ -92,7 +92,7 @@ const resources = {
       "contact_mail": "Contáctame",
       "contact_follow": "Sígueme",
       "contact_msg": "Contáctame",
-      "link_pdf": "resume_es.pdf",
+      "link_pdf": "./resume_es.pdf",
     }
   }
 };

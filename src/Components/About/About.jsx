@@ -11,15 +11,29 @@ import imgRedux from "../../Images/skill_redux.png";
 import imgExpress from "../../Images/skill_express.png";
 import imgGit from "../../Images/skill_git.png";
 import imgOop from "../../Images/skill_opp.png";
-
+import resumeES from "./Constantin Mitrokhin - FullStack Developer_es.pdf";
+import resumeEN from "./Constantin Mitrokhin - FullStack Developer_en.pdf";
+import resumeRU from "./Constantin Mitrokhin - FullStack Developer_en.pdf"; //! UNDER CONSTRUCTION!! 
+ 
 export default function About({id}) {
   const { t, i18n } = useTranslation();
 
   const handleDownload = () => {
-    const pdfUrl = t("link_pdf");
+    let pdfUrl;
+    switch (t("navBar_lang")) {
+      case "Русский":
+        pdfUrl = resumeRU;
+        break;
+      case "Español":
+        pdfUrl = resumeES;
+        break;
+      default:
+        pdfUrl = resumeEN;
+        break;
+    }
     window.open(pdfUrl, "_blank");
   };
-
+//t("link_pdf")
   return (
     <div className={styles.aboutContainer} id={id}>
       <h1>{t("about_title")}</h1>
