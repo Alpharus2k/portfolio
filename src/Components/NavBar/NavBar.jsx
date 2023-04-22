@@ -81,10 +81,10 @@ export default function NavBar() {
       {isMobile && isOpen && (
         <div className={styles.overlay} onClick={toggleMenu}>
           <div className={styles.overlayContent}>
-            <span className={styles.spanElemOverlay}><a className={activeSection === "home" ? styles.active : "" } href="#home">{t("navBar_home")}</a></span>
-            <span className={styles.spanElemOverlay}><a className={activeSection === "about" ? styles.active : "" } href="#about">{t("navBar_about")}</a></span>
-            <span className={styles.spanElemOverlay}><a className={activeSection === "portfolio" ? styles.active : "" } href="#portfolio">{t("navBar_portfolio")}</a></span>
-            <span className={styles.spanElemOverlay}><a className={activeSection === "contact" ? styles.active : "" } href="#contact">{t("navBar_contact")}</a></span>
+            <span className={styles.spanElemOverlay}><a className={activeSection === "home" ? styles.activeOverlay : "" } href="#home">{t("navBar_home")}</a></span>
+            <span className={styles.spanElemOverlay}><a className={activeSection === "about" ? styles.activeOverlay : "" } href="#about">{t("navBar_about")}</a></span>
+            <span className={styles.spanElemOverlay}><a className={activeSection === "portfolio" ? styles.activeOverlay : "" } href="#portfolio">{t("navBar_portfolio")}</a></span>
+            <span className={styles.spanElemOverlay}><a className={activeSection === "contact" ? styles.activeOverlay : "" } href="#contact">{t("navBar_contact")}</a></span>
             <select value={i18n.language} onChange={handleLangChange} onClick={(e) => e.stopPropagation()}>
               <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="en">{t("lang_en")}</option>
               <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="es">{t("lang_es")}</option>

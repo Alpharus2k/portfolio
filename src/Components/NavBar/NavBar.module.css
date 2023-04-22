@@ -14,6 +14,9 @@
 .active {
    color: var(--regular-color-active);
 }
+.activeOverlay {
+    color: var(--regular-color);
+ }
 .btnBurger {
     padding: 3vw;
     border-radius: 1rem;
