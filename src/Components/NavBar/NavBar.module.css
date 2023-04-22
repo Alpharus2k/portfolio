@@ -15,7 +15,7 @@
    color: var(--regular-color-active);
 }
 .btnBurger {
-    padding: 4vw;
+    padding: 3vw;
     border-radius: 1rem;
     background-color: var(--text-bg-color);
 }

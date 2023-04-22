@@ -62,12 +62,11 @@ export default function NavBar() {
     <div className={`${styles.navbar} ${isNavbarFixed ? styles.fixedNavbar : ""}`}>
       {isMobile && (
         <button className={styles.btnBurger} onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faBars} size="4x" style={{ fontWeight: "bold" }}/>
+          <FontAwesomeIcon icon={faBars} size="3x" style={{ fontWeight: "bold" }}/>
         </button>
       )}
       {!isMobile && (
         <div>
-
           <span className={styles.spanElem}><a className={activeSection === "home" ? styles.active : "" } href="#home">{t("navBar_home")}</a></span>
           <span className={styles.spanElem}><a className={activeSection === "about" ? styles.active : "" } href="#about">{t("navBar_about")}</a></span>
           <span className={styles.spanElem}><a className={activeSection === "portfolio" ? styles.active : "" } href="#portfolio">{t("navBar_portfolio")}</a></span>
@@ -82,10 +81,10 @@ export default function NavBar() {
       {isMobile && isOpen && (
         <div className={styles.overlay} onClick={toggleMenu}>
           <div className={styles.overlayContent}>
-            <span className={styles.spanElemOverlay}>{t("navBar_home")}</span>
-            <span className={styles.spanElemOverlay}>{t("navBar_about")}</span>
-            <span className={styles.spanElemOverlay}>{t("navBar_portfolio")}</span>
-            <span className={styles.spanElemOverlay}>{t("navBar_contact")}</span>
+            <span className={styles.spanElemOverlay}><a className={activeSection === "home" ? styles.active : "" } href="#home">{t("navBar_home")}</a></span>
+            <span className={styles.spanElemOverlay}><a className={activeSection === "about" ? styles.active : "" } href="#about">{t("navBar_about")}</a></span>
+            <span className={styles.spanElemOverlay}><a className={activeSection === "portfolio" ? styles.active : "" } href="#portfolio">{t("navBar_portfolio")}</a></span>
+            <span className={styles.spanElemOverlay}><a className={activeSection === "contact" ? styles.active : "" } href="#contact">{t("navBar_contact")}</a></span>
             <select value={i18n.language} onChange={handleLangChange} onClick={(e) => e.stopPropagation()}>
               <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="en">{t("lang_en")}</option>
               <option className={styles.spanElem} style={{ backgroundColor: 'black' }} value="es">{t("lang_es")}</option>
