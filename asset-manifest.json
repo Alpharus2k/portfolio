@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5edec102.css",
-    "main.js": "/portfolio/static/js/main.d87ff348.js",
+    "main.js": "/portfolio/static/js/main.54d82e5d.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/header_bg_image_dark2.jpg": "/portfolio/static/media/header_bg_image_dark2.e4d91794d5ac66155da9.jpg",
     "static/media/Constantin Mitrokhin - FullStack Developer_es.pdf": "/portfolio/static/media/Constantin Mitrokhin - FullStack Developer_es.55943bf280da97c8fec7.pdf",
@@ -20,11 +20,11 @@
     "static/media/skill_redux.png": "/portfolio/static/media/skill_redux.4bebbe1e5361c338b767.png",
     "index.html": "/portfolio/index.html",
     "main.5edec102.css.map": "/portfolio/static/css/main.5edec102.css.map",
-    "main.d87ff348.js.map": "/portfolio/static/js/main.d87ff348.js.map",
+    "main.54d82e5d.js.map": "/portfolio/static/js/main.54d82e5d.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5edec102.css",
-    "static/js/main.d87ff348.js"
+    "static/js/main.54d82e5d.js"
   ]
 }
